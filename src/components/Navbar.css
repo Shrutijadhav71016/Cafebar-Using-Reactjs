@@ -1,0 +1,76 @@
+/* Global Navbar Style */
+.navbar {
+  background: linear-gradient(135deg, #4b2c20,rgb(230, 152, 69),rgb(186, 91, 48));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 0 0 12px 12px;
+  height:70px;
+}
+
+/* Transparent container effect */
+.container-fluid {
+  background-color: rgba(255, 255, 255, 0.07); /* subtle glass effect */
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+/* Brand logo - CafeBar */
+.navbar-brand {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f5deb3; /* light mocha */
+  text-shadow: 1px 1px #00000033;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #fff2e6 !important; /* light cream */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc99 !important; /* peachy highlight */
+  text-shadow: 0 0 5px #ffeecc;
+}
+
+/* Active link */
+.nav-link.active {
+  color: #ffd700 !important; /* gold */
+}
+
+/* Search bar */
+.form-control {
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px 2px #d2691e77;
+  border: none;
+}
+
+/* Search button */
+.btn-outline-success {
+  border-color: #a0522d;
+  color: #a0522d;
+  background-color: rgba(255, 248, 220, 0.8); /* cornsilk */
+  transition: 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: #a0522d;
+  color: white;
+  box-shadow: 0 0 10px #deb887aa;
+}
+
+/* Toggle icon for mobile */
+.navbar-toggler {
+  border-color: #f5deb3;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 245, 222, 179, 1 %29)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

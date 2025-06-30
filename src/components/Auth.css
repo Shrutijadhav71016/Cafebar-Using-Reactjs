@@ -1,0 +1,72 @@
+.auth_container {
+  background-image: url('https://plus.unsplash.com/premium_photo-1673984588721-9be1d3c9d592?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth_container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.auth_form_box {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth_form_box h2 {
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.auth_form_box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.auth_form_box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ba5b30;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth_form_box button:hover {
+  background-color: #9b4521;
+}
+
+.switch_link {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #eee;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+.contact_container {
+  background-image: url('https://images.unsplash.com/photo-1556742517-fde6c2abbe11?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  position: relative;
+  color: white;
+}
+
+.contact_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.contact_content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.contact_content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ffe8d6;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.contact_form textarea {
+  resize: none;
+}
+
+.contact_form button {
+  padding: 12px 24px;
+  background-color: #ba5b30;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact_form button:hover {
+  background-color: #9c4723;
+}

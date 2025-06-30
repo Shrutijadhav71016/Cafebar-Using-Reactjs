@@ -1,0 +1,69 @@
+/* About.css - Styles for the About page */
+
+.about-bg {
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1511081692775-05d0f180a065?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1511081692775-05d0f180a065?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+}
+
+.about_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  z-index: 1;
+}
+
+.about_content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(80, 0, 80, 0.08);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  margin: 2rem;
+}
+
+.about_content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f9d3b4;
+  font-size: 2.2rem;
+  color: #5a3e36;
+  margin-bottom: 1rem;
+}
+
+.about_content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #6b4226;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+}
